@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AES_UI">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="17" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1338" height="800"/>
+    </constraints>
+    <properties>
+      <background color="-15461348"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <vspacer id="4ae02">
+        <constraints>
+          <grid row="1" column="8" row-span="9" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="18da1" class="javax.swing.JTextField" binding="keyGenBox">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+        </properties>
+      </component>
+      <component id="fc105" class="javax.swing.JButton" binding="geyGenButton">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Generuj klucz"/>
+        </properties>
+      </component>
+      <vspacer id="c604a">
+        <constraints>
+          <grid row="1" column="0" row-span="5" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="35fdf" class="javax.swing.JTextField" binding="rawFileOpenBox">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <margin top="2" left="6" bottom="2" right="6"/>
+          <text value="Nazwa pliku z tekstem"/>
+        </properties>
+      </component>
+      <component id="bec17" class="javax.swing.JTextArea" binding="rawFileTextArea">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Wpisz tekst manualnie"/>
+        </properties>
+      </component>
+      <hspacer id="834ea">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="b8a31" class="javax.swing.JButton" binding="cypherButton">
+        <constraints>
+          <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Szyfruj"/>
+        </properties>
+      </component>
+      <component id="efb79" class="javax.swing.JButton" binding="decypherButton">
+        <constraints>
+          <grid row="14" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Deszyfruj"/>
+        </properties>
+      </component>
+      <component id="8e207" class="javax.swing.JButton" binding="rawFileOpenButton">
+        <constraints>
+          <grid row="13" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Otwórz"/>
+        </properties>
+      </component>
+      <component id="a85b0" class="javax.swing.JTextField" binding="cypheredFileOpenBox">
+        <constraints>
+          <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Nazwa pliku z szyfrogramem"/>
+        </properties>
+      </component>
+      <component id="f4bb8" class="javax.swing.JButton" binding="cypheredFileOpenButton">
+        <constraints>
+          <grid row="13" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Otwórz"/>
+        </properties>
+      </component>
+      <component id="ba4c6" class="javax.swing.JTextArea" binding="cypheredFileTextArea">
+        <constraints>
+          <grid row="14" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Podaj szyfrogram manualnie"/>
+        </properties>
+      </component>
+      <component id="ac1b0" class="javax.swing.JTextField" binding="rawFileSaveBox">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Nazwa pliku z tekstem"/>
+        </properties>
+      </component>
+      <component id="d69eb" class="javax.swing.JTextField" binding="cypheredFileSaveBox">
+        <constraints>
+          <grid row="15" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Nazwa pliku z szyfrogramem"/>
+        </properties>
+      </component>
+      <component id="caeca" class="javax.swing.JButton" binding="rawFileSaveButton">
+        <constraints>
+          <grid row="15" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="zapisz"/>
+        </properties>
+      </component>
+      <component id="b8547" class="javax.swing.JButton" binding="cypheredFileSaveButton">
+        <constraints>
+          <grid row="15" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="zapisz"/>
+        </properties>
+      </component>
+      <hspacer id="d4cd0">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="1ecb4">
+        <constraints>
+          <grid row="10" column="4" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="7f39e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="22"/>
+          <foreground color="-19939"/>
+          <text value="SZYFROWANIE-DESZYFROWANIE"/>
+        </properties>
+      </component>
+      <component id="c1ce5" class="javax.swing.JTextField" binding="keyLoadBox">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Nazwa pliku klucza do wczytania"/>
+        </properties>
+      </component>
+      <component id="e02db" class="javax.swing.JButton" binding="keyLoadButton">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Wczytaj"/>
+        </properties>
+      </component>
+      <component id="d2e4f" class="javax.swing.JTextField" binding="keySaveBox">
+        <constraints>
+          <grid row="5" column="6" row-span="4" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7172126"/>
+          <text value="Nazwa pliku klucza do zapisu"/>
+        </properties>
+      </component>
+      <component id="f6afa" class="javax.swing.JButton" binding="keySaveButton">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11977217"/>
+          <foreground color="-789517"/>
+          <text value="Zapisz"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
